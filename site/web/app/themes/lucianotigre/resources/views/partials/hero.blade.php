@@ -7,10 +7,10 @@
 
             <div class="mt-8 flex justify-center gap-4">
                 <a href="/cursos"
-                    class="px-6 py-3 bg-primary hover:bg-green-700 rounded-lg font-semibold no-underline hover:underline">Ver
+                    class="px-6 py-3 bg-primary hover:bg-green-700 rounded-lg no-underline hover:underline">Ver
                     Cursos</a>
                 <a href="/loja"
-                    class="px-6 py-3 bg-secondary text-white hover:bg-secondary-dark rounded-lg font-semibold no-underline hover:underline">Loja</a>
+                    class="px-6 py-3 bg-secondary text-white hover:bg-secondary-dark rounded-lg no-underline hover:underline">Loja</a>
             </div>
         </div>
     </div>

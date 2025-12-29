@@ -27,12 +27,12 @@ add_filter('sage/blade/data', function ($data) {
 
 // shop page
 add_filter('woocommerce_product_add_to_cart_text', function ($text) {
-  return __('Comprar', 'sage');
+  return __('Adicionar ao carrinho', 'sage');
 });
 
 // single product page
 add_filter('woocommerce_product_single_add_to_cart_text', function ($text) {
-  return __('Comprar', 'sage');
+  return __('Adicionar ao carrinho', 'sage');
 });
 
 add_filter('woocommerce_product_related_products_heading', function ($text) {

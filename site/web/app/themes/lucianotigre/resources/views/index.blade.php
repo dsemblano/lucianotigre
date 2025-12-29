@@ -1,10 +1,9 @@
 @extends('layouts.app')
 
-<section class="container">
-  @section('content')
-    @if (! is_front_page() && ! is_home() )
-      @include('partials.page-header')
-    @endif
+@section('content')
+  @if (! is_front_page() && ! is_home() )
+    @include('partials.page-header')
+  @endif
 
   @if (! have_posts())
     <x-alert type="warning">
@@ -18,9 +17,8 @@
     @includeFirst(['partials.content-' . get_post_type(), 'partials.content'])
   @endwhile
 
-    {!! get_the_posts_navigation() !!}
-  @endsection
-</section>
+  {!! get_the_posts_navigation() !!}
+@endsection
 
 @section('sidebar')
   @include('sections.sidebar')

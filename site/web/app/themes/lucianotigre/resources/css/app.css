@@ -2,18 +2,24 @@
 @plugin "@tailwindcss/typography";
 @source "../views/";
 @source "../../app/";
+@import './fonts.css';
 
 @theme static {
 
-    --color-primary: #2f4f4f; /* verde */
-    --color-secondary: #cc5500 ; /* laranja */
-    --color-secondary-dark: #a95c34 ; /* laranja escuro */
-    --color-accent: #f5f5dc ; /* bege */
-    /* --font-heading:  */
-    --font-heading: "Space Grotesk", sans-serif;
+  --color-primary: #2f4f4f;
+  /* verde */
+  --color-secondary: #cc5500;
+  /* laranja */
+  --color-secondary-dark: #a95c34;
+  /* laranja escuro */
+  --color-accent: #f5f5dc;
+  /* bege */
+  --font-heading: "BlackOpsOne-Regular", sans-serif;
+  /* --font-heading: "Space Grotesk", sans-serif; */
 }
 
 @layer utility {
+
   .container,
   .th-inside-container {
     padding: var(--container-padding, 1rem);
@@ -29,15 +35,36 @@
   }
 }
 
+:root {
+  --font-sans: 'InterRegular', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
 body {
-    @apply bg-accent;
+  @apply bg-accent;
+
+  /* font-family: 'InterRegular', system-ui, -apple-system, sans-serif;
+    font-weight: 400; */
+}
+
+strong {
+  font-weight: 700;
+}
+
+.small {
+  font-weight: 300;
 }
 
 #hero {
-    background-image: url('../images/hero/hero.jpg');
-    background-position: 10% 30%;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url('../images/hero/hero.jpg');
+  background-position: 10% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Menu */
@@ -56,7 +83,7 @@ ul#menu-menu-principal {
 
 /* Produtos */
 #produtos {
-  background-color: red;
+  /* background-color: red; */
 
   ul {
     @apply flex flex-col lg:flex-row gap-6 justify-center;
@@ -95,11 +122,11 @@ main section header h1.container {
 
 /* Woocommerce */
 .woo-better-icon-current-style {
-    top: -0.5rem;
+  top: -0.5rem;
 }
 
 .aligncenter {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .products.columns-4 {
@@ -185,7 +212,7 @@ figure .lazyloading {
   img {
     @apply rounded-xl;
   }
-} 
+}
 
 .wp-block-woocommerce-product-image {
   overflow: hidden;
@@ -232,27 +259,78 @@ li.wc-block-product img:hover {
   display: none;
 }
 
-h1.wp-block-heading,
-h1.woocommerce-products-header__title,
-h1.product_title,
-article header h1 {
-	background: linear-gradient(
-    120deg,
-    var(--color-secondary),
-    var(--color-melescuro)
-  );
-	background-clip: text;
-	color: transparent;
-	/* -webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: hsl(0 0% 10% / 30%); */
+.h-03 {
+  height: calc(var(--spacing) * 0.3);
 }
 
-/* .home-wrapper {
-  padding-bottom: 7rem;  
-  
-  background: linear-gradient(180deg,rgba(248, 234, 208, 1) 0%, rgba(248, 234, 208, 1) 75%, rgba(238, 118, 5, 1) 100%);
-} */
+/* Woocommerce */
+#shop {
+  header#loja {
+    h1 {
+      @apply text-white text-6xl;
+    }
 
-/* header.banner {
-  background: linear-gradient(180deg,rgba(248, 234, 208, 1) 0%, rgba(248, 234, 208, 1) 75%, rgba(255, 255, 255, 1) 100%);
-} */
+    p {
+      @apply text-white text-xl;
+    }
+
+    strong {
+      @apply text-white;
+    }
+
+    .wp-block-cover__image-background,
+    .wp-block-cover__background {
+      @apply rounded-xl;
+    }
+  }
+
+  .wp-block-woocommerce-product-collection {
+    margin-top: 4rem;
+
+    ul {
+      li.wc-block-product {
+        @apply rounded-lg bg-white;
+
+        img {
+          @apply rounded-t-xl;
+        }
+      }
+    }
+  }
+
+}
+
+:root :where(.wp-element-button, .wp-block-button__link) {
+  @apply rounded-xl bg-primary text-white font-semibold w-fit;
+}
+
+/* Products single page */
+
+.woocommerce-product-gallery {
+  .woocommerce-product-gallery__image {
+    img {
+      @apply rounded-xl;
+    }
+  }
+
+  ol.flex-control-thumbs {
+    li {
+      margin-bottom: 1rem !important;
+      img {
+        @apply rounded-xl;
+      }
+    }
+  }
+}
+
+.input-text {
+  @apply rounded-lg border border-gray-400 p-0.5 mr-4;
+}
+
+.woocommerce div.product div.summary {
+  margin-top: 1.5rem;
+}
+
+#shop_single_products {
+  margin-top: -2.5rem;
+}

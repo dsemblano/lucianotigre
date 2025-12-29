@@ -1,0 +1,25 @@
+@font-face {
+    font-display: swap;
+    font-family: 'BlackOpsOne-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('@fonts/BlackOpsOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'InterRegular';
+  src: url('/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'InterItalic';
+  src: url('/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: oblique 0deg 10deg;
+  font-display: swap;
+}
+
+

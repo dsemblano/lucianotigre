@@ -1,5 +1,5 @@
-<header class="banner w-full z-50 top-0 left-0 bg-fundo shadow-md container">
-    <div class="flex flex-row lg:text-2xl text-p container py-4 gap-4">
+<header class="banner w-full z-50 top-0 left-0 bg-fundo container">
+    <div class="flex flex-row lg:text-2xl text-p py-4 gap-4 justify-start">
           {{-- <a class="brand" href="{{ home_url('/') }}">
             {!! $siteName !!}
           </a> --}}
@@ -10,5 +10,5 @@
             </nav>
         @endif
     </div>
-    <hr class="h-0.5 my-4 bg-gray-300 border-0">
+    <hr class="h-03 my-4 bg-gray-300 border-0">
 </header>
