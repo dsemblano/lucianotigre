@@ -1,12 +1,27 @@
 <section id="sobremim" class="bg-accent mt-12">
-    <div class="container flex flex-col lg:flex-row items-start gap-8 lg:gap-16 py-12 lg:py-24">
-        <picture class="grow-0 w-full lg:w-2/5">
-            <source srcset="{{ Vite::asset('resources/images/aboutme.webp') }}" media="(max-width: 767px)">
-            <source srcset="{{ Vite::asset('resources/images/aboutme.webp') }}" media="(min-width: 768px)">
-            <img src="{{ Vite::asset('resources/images/aboutme.webp') }}" alt="Luciano tigre foto" class="rounded-xl">
-        </picture>
+    <div class="container flex flex-col lg:flex-row items-start gap-x-8 lg:gap-x-10 py-12 lg:py-24">
 
-        <div class="hero-text lg:w-3/5 prose prose-h2:mt-0  prose-h2:text-4xl prose-h3:text-lg max-w-none prose-a:no-underline prose-p:text-gray-800">
+        <div class="lg:w-2/5 flex flex-col gap-6 mb-8 lg:mb-0">
+            <picture class="">
+                <source srcset="{{ Vite::asset('resources/images/aboutme.webp') }}" media="(max-width: 767px)">
+                <source srcset="{{ Vite::asset('resources/images/aboutme.webp') }}" media="(min-width: 768px)">
+                <img src="{{ Vite::asset('resources/images/aboutme.webp') }}" alt="Luciano tigre foto"
+                    class="rounded-xl">
+            </picture>
+
+            <picture class="">
+                <source srcset="{{ Vite::asset('resources/images/luciano-tigre-e-danilo-gentili.webp') }}" media="(max-width: 767px)">
+                <source srcset="{{ Vite::asset('resources/images/luciano-tigre-e-danilo-gentili.webp') }}" media="(min-width: 768px)">
+                <img src="{{ Vite::asset('resources/images/luciano-tigre-e-danilo-gentili.webp') }}" alt="Luciano Tigre e Danilo Gentili"
+                    class="rounded-xl">
+                <figcaption class="text-center">Luciano Tigre com Danilo Gentili</figcaption>
+
+            </picture>
+        </div>
+
+
+        <div
+            class="hero-text lg:w-3/5 prose prose-h2:mt-0  prose-h2:text-4xl prose-h3:text-lg max-w-none prose-a:no-underline prose-p:text-gray-800">
             <h2 class="text-primary font-bold">Mais sobre Luciano Tigre</h2>
             <h3 class="text-primary font-bold">Sobrevivência | Selva | Mar | Deserto | Gelo</h3>
             <p class="text-gray-700">
@@ -33,6 +48,7 @@
                 Amazônia, convivendo com as etnias Karipuna, Kaxuyana e Kalinã. Sua jornada, portanto, é uma homenagem à
                 ancestralidade, uma busca por conhecimentos perdidos.
             </p>
+
             <p>
                 Foi quando Tigre serviu no Exército é que estreitou os laços com índios da Amazônia, ou seja, ele
                 mergulhou de vez na cultura indígena brasileira. “Ali eu entendi a profunda leitura da natureza, como
