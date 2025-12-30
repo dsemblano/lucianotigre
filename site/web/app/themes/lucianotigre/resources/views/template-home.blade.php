@@ -12,6 +12,7 @@
         @endif
         @include('partials.hero')
         @include('partials.aboutme')
+        @include('partials.tvprograms')
         @include('partials.produtoshome')
         @include('partials.content-page')
     @endwhile
