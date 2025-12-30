@@ -1,7 +1,7 @@
 <section id="sobremim" class="bg-accent mt-12">
     <div class="container flex flex-col lg:flex-row items-start gap-x-8 lg:gap-x-10 py-12 lg:py-24">
 
-        <div class="lg:w-2/5 flex flex-col gap-6 mb-8 lg:mb-0">
+        <div class="order-2 md:order-1 lg:w-2/5 flex flex-col gap-6 mb-8 lg:mb-0">
             <picture class="">
                 <source srcset="{{ Vite::asset('resources/images/aboutme.webp') }}" media="(max-width: 767px)">
                 <source srcset="{{ Vite::asset('resources/images/aboutme.webp') }}" media="(min-width: 768px)">
@@ -21,21 +21,17 @@
 
 
         <div
-            class="hero-text lg:w-3/5 prose prose-h2:mt-0  prose-h2:text-4xl prose-h3:text-lg max-w-none prose-a:no-underline prose-p:text-gray-800">
+            class="order-1 md:order-2 hero-text lg:w-3/5 prose prose-h2:mt-0  prose-h2:text-4xl prose-h3:text-lg max-w-none prose-a:no-underline prose-p:text-gray-800">
             <h2 class="text-primary font-bold">Mais sobre Luciano Tigre</h2>
             <h3 class="text-primary font-bold">Sobrevivência | Selva | Mar | Deserto | Gelo</h3>
             <p class="text-gray-700">
                 Luciano Tigre é apresentador do Discovery Channel e da nova temporada de Desafio em Dose Dupla Brasil
-                técnicas de sobrevivência Piloto de avião, Professor e instrutor de sobrevivência na Selva para os
+                técnicas de sobrevivência Piloto de avião, ex-militar, piloto de avião (instrutor), especialista em bushcraft – termo em inglês que
+                designa o conjunto de técnicas de sobrevivência na natureza selvagem (Selva, mar, deserto e gelo) – e
+                privilegia técnicas primitivas aprendidas com indígenas. Professor e instrutor de sobrevivência na Selva para os
                 Cursos de Comissário de bordo e Pilotos de aeronaves em Curitiba - Drakon escola de aviação Civil e
                 Aeroporto do Bacacheri. Também professor de meteorologia aeronáutica para o curso de Pilotos de avião e
                 helicóptero.
-            </p>
-
-            <p>
-                Luciano Tigre é ex-militar, piloto de avião (instrutor), especialista em bushcraft – termo em inglês que
-                designa o conjunto de técnicas de sobrevivência na natureza selvagem (Selva, mar, deserto e gelo) – e
-                privilegia técnicas primitivas aprendidas com indígenas.
             </p>
 
             <p>
